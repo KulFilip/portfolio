@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Project } from '../data/projects';
-import AnimatedIcon from './AnimatedIcon';
 
 interface ProjectCardProps {
   project: Project;
@@ -32,7 +31,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
 
       {/* Icon */}
       <div className="mb-4">
-        <AnimatedIcon name={project.icon} />
+        <span className="emoji-icon text-4xl inline-block" data-icon={project.icon}>{project.icon}</span>
       </div>
 
       {/* Title */}

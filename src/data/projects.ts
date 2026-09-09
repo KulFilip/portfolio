@@ -19,7 +19,7 @@ export const projects: Project[] = [
     tags: ['Risk Management', 'ISO 31000', 'COSO', 'Dashboard'],
     url: 'https://risk-register.vercel.app',
     status: 'active',
-    icon: 'shield',
+    icon: '🛡️',
     metrics: [
       { label: 'Ryzyka monitorowane', value: '2,400+' },
       { label: 'Organizacje', value: '15' },
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     tags: ['GRC', 'Compliance', 'Audit', 'Reporting'],
     url: 'https://grc-hub.vercel.app',
     status: 'active',
-    icon: 'clipboard',
+    icon: '📋',
     metrics: [
       { label: 'Kontrolki', value: '850+' },
       { label: 'Audity rocznie', value: '120+' },
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     tags: ['DORA', 'ICT Risk', 'Financial Services', 'Regulatory'],
     url: 'https://dora-monitor.vercel.app',
     status: 'active',
-    icon: 'bank',
+    icon: '🏦',
     metrics: [
       { label: 'Instytucje', value: '8' },
       { label: 'Incydenty ICT', value: '340+' },
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     tags: ['ISO 27001', 'ISMS', 'Information Security', 'SOA'],
     url: 'https://iso-manager.vercel.app',
     status: 'active',
-    icon: 'lock',
+    icon: '🔐',
     metrics: [
       { label: 'Kontrolki SOA', value: '93' },
       { label: 'Certyfikacje', value: '12' },
@@ -79,7 +79,7 @@ export const projects: Project[] = [
     tags: ['Incident Management', 'SOC', 'Workflow', 'Escalation'],
     url: 'https://incident-tracker.vercel.app',
     status: 'beta',
-    icon: 'alert',
+    icon: '🚨',
     metrics: [
       { label: 'Incydenty/mies.', value: '450+' },
       { label: 'Śr. czas reakcji', value: '< 15 min' },
@@ -94,7 +94,7 @@ export const projects: Project[] = [
     tags: ['Policy Management', 'Document Control', 'Awareness', 'Workflow'],
     url: 'https://policy-vault.vercel.app',
     status: 'active',
-    icon: 'document',
+    icon: '📑',
     metrics: [
       { label: 'Polityki', value: '280+' },
       { label: 'Pracownicy', value: '3,200+' },
@@ -109,7 +109,7 @@ export const projects: Project[] = [
     tags: ['Third-Party Risk', 'Vendor Management', 'Due Diligence', 'DORA'],
     url: 'https://vendor-risk.vercel.app',
     status: 'active',
-    icon: 'handshake',
+    icon: '🤝',
     metrics: [
       { label: 'Dostawcy', value: '560+' },
       { label: 'Oceny rocznie', value: '890+' },
@@ -124,7 +124,7 @@ export const projects: Project[] = [
     tags: ['BCP', 'Disaster Recovery', 'BIA', 'Resilience'],
     url: 'https://bcp-planner.vercel.app',
     status: 'beta',
-    icon: 'refresh',
+    icon: '🔄',
     metrics: [
       { label: 'Plany BCP', value: '45' },
       { label: 'Testy rocznie', value: '60+' },
