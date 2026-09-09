@@ -1,1 +1,168 @@
 @import "tailwindcss";
+
+/* === Animated Icons === */
+.animated-icon {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/* Shield - pulse on hover */
+.icon-shield {
+  transition: transform 0.3s ease;
+}
+.group:hover .icon-shield {
+  transform: scale(1.05);
+}
+.icon-shield-path {
+  transition: stroke-dashoffset 0.6s ease;
+  stroke-dasharray: 120;
+  stroke-dashoffset: 0;
+}
+.icon-shield-check {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  transition: stroke-dashoffset 0.4s ease 0.3s;
+}
+.group:hover .icon-shield-check {
+  stroke-dashoffset: 0;
+}
+
+/* Clipboard - lines slide in on hover */
+.icon-clipboard-line1,
+.icon-clipboard-line2,
+.icon-clipboard-line3 {
+  stroke-dasharray: 20;
+  stroke-dashoffset: 20;
+  transition: stroke-dashoffset 0.3s ease;
+}
+.group:hover .icon-clipboard-line1 {
+  stroke-dashoffset: 0;
+  transition-delay: 0s;
+}
+.group:hover .icon-clipboard-line2 {
+  stroke-dashoffset: 0;
+  transition-delay: 0.1s;
+}
+.group:hover .icon-clipboard-line3 {
+  stroke-dashoffset: 0;
+  transition-delay: 0.2s;
+}
+
+/* Bank - columns grow on hover */
+.icon-bank-col1,
+.icon-bank-col2,
+.icon-bank-col3,
+.icon-bank-col4 {
+  transform-origin: center bottom;
+  transition: transform 0.3s ease;
+}
+.group:hover .icon-bank-col1 { transform: scaleY(1.05); transition-delay: 0s; }
+.group:hover .icon-bank-col2 { transform: scaleY(1.05); transition-delay: 0.05s; }
+.group:hover .icon-bank-col3 { transform: scaleY(1.05); transition-delay: 0.1s; }
+.group:hover .icon-bank-col4 { transform: scaleY(1.05); transition-delay: 0.15s; }
+
+/* Lock - shackle closes on hover */
+.icon-lock-shackle {
+  transition: transform 0.3s ease;
+  transform-origin: center bottom;
+}
+.group:hover .icon-lock-shackle {
+  transform: translateY(-2px);
+}
+.icon-lock-dot {
+  transition: r 0.2s ease;
+}
+.group:hover .icon-lock-dot {
+  r: 2.5;
+}
+
+/* Alert - waves pulse on hover */
+.icon-alert-wave1,
+.icon-alert-wave2 {
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.group:hover .icon-alert-wave1 {
+  opacity: 1;
+  animation: wave-pulse 1s ease-in-out infinite;
+}
+.group:hover .icon-alert-wave2 {
+  opacity: 1;
+  animation: wave-pulse 1s ease-in-out infinite 0.5s;
+}
+@keyframes wave-pulse {
+  0%, 100% { opacity: 0.3; transform: translateX(0); }
+  50% { opacity: 1; transform: translateX(1px); }
+}
+
+/* Document - lines appear on hover */
+.icon-doc-line1,
+.icon-doc-line2,
+.icon-doc-line3 {
+  stroke-dasharray: 16;
+  stroke-dashoffset: 16;
+  transition: stroke-dashoffset 0.3s ease;
+}
+.group:hover .icon-doc-line1 {
+  stroke-dashoffset: 0;
+  transition-delay: 0s;
+}
+.group:hover .icon-doc-line2 {
+  stroke-dashoffset: 0;
+  transition-delay: 0.1s;
+}
+.group:hover .icon-doc-line3 {
+  stroke-dashoffset: 0;
+  transition-delay: 0.2s;
+}
+
+/* Handshake - dots approach on hover */
+.icon-handshake-dot1,
+.icon-handshake-dot2 {
+  transition: transform 0.4s ease;
+}
+.group:hover .icon-handshake-dot1 {
+  transform: translateX(3px);
+}
+.group:hover .icon-handshake-dot2 {
+  transform: translateX(-3px);
+}
+.icon-handshake-path {
+  transition: stroke-dashoffset 0.5s ease;
+  stroke-dasharray: 60;
+  stroke-dashoffset: 0;
+}
+.icon-handshake-arrows {
+  opacity: 0;
+  transition: opacity 0.3s ease 0.2s;
+}
+.group:hover .icon-handshake-arrows {
+  opacity: 1;
+}
+
+/* Refresh - rotate on hover */
+.icon-refresh {
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.group:hover .icon-refresh {
+  transform: rotate(180deg);
+}
+.icon-refresh-arc1,
+.icon-refresh-arc2 {
+  transition: stroke-dashoffset 0.4s ease;
+}
+
+/* === Ambient animation for all icons === */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+
+.animated-icon {
+  animation: float 4s ease-in-out infinite;
+}
+
+.group:hover .animated-icon {
+  animation-play-state: paused;
+}
