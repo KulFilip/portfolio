@@ -118,6 +118,37 @@ export default function AnimatedIcon({ name }: AnimatedIconProps) {
         <path d="M12 30v-6h6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
+    users: (
+      <svg viewBox="0 0 48 48" fill="none" className="animated-icon">
+        <circle cx="18" cy="16" r="6" stroke="currentColor" strokeWidth="2" className="icon-user1" />
+        <path d="M6 38c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="icon-body1" />
+        <circle cx="34" cy="18" r="5" stroke="currentColor" strokeWidth="2" className="icon-user2" />
+        <path d="M42 38c0-5-3.6-9-8-9s-8 4-8 9" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="icon-body2" />
+      </svg>
+    ),
+    privacy: (
+      <svg viewBox="0 0 48 48" fill="none" className="animated-icon">
+        <circle cx="24" cy="20" r="12" stroke="currentColor" strokeWidth="2" />
+        <path d="M24 14v6l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon-clock" />
+        <path d="M16 32l-4 8M32 32l4 8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <line x1="12" y1="40" x2="36" y2="40" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+      </svg>
+    ),
+    person: (
+      <svg viewBox="0 0 48 48" fill="none" className="animated-icon">
+        <circle cx="24" cy="14" r="8" stroke="currentColor" strokeWidth="2" className="icon-head" />
+        <path d="M8 42c0-8.8 7.2-16 16-16s16 7.2 16 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="icon-body" />
+        <path d="M20 14h8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" className="icon-visor" />
+      </svg>
+    ),
+    globe: (
+      <svg viewBox="0 0 48 48" fill="none" className="animated-icon">
+        <circle cx="24" cy="24" r="16" stroke="currentColor" strokeWidth="2" />
+        <ellipse cx="24" cy="24" rx="8" ry="16" stroke="currentColor" strokeWidth="2" className="icon-meridian" />
+        <line x1="8" y1="24" x2="40" y2="24" stroke="currentColor" strokeWidth="2" className="icon-equator" />
+        <path d="M10 16h28M10 32h28" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" opacity="0.5" />
+      </svg>
+    ),
   };
 
   return (

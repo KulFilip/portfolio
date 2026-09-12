@@ -51,10 +51,10 @@
   transform-origin: center bottom;
   transition: transform 0.3s ease;
 }
-.group:hover .icon-col:nth-child(2) { transform: scaleY(1.05); transition-delay: 0s; }
-.group:hover .icon-col:nth-child(3) { transform: scaleY(1.05); transition-delay: 0.05s; }
-.group:hover .icon-col:nth-child(4) { transform: scaleY(1.05); transition-delay: 0.1s; }
-.group:hover .icon-col:nth-child(5) { transform: scaleY(1.05); transition-delay: 0.15s; }
+.group:hover .icon-col:nth-of-type(2) { transform: scaleY(1.05); transition-delay: 0s; }
+.group:hover .icon-col:nth-of-type(3) { transform: scaleY(1.05); transition-delay: 0.05s; }
+.group:hover .icon-col:nth-of-type(4) { transform: scaleY(1.05); transition-delay: 0.1s; }
+.group:hover .icon-col:nth-of-type(5) { transform: scaleY(1.05); transition-delay: 0.15s; }
 
 /* === Lock - shackle lifts on hover === */
 .icon-shackle {
@@ -110,6 +110,62 @@
   transition: opacity 0.3s ease 0.2s;
 }
 .group:hover .icon-arrows { opacity: 1; }
+
+/* === Users - people move closer on hover === */
+.icon-user1,
+.icon-user2 {
+  transition: transform 0.4s ease;
+}
+.group:hover .icon-user1 { transform: translateX(2px); }
+.group:hover .icon-user2 { transform: translateX(-2px); }
+
+.icon-body1,
+.icon-body2 {
+  transition: transform 0.4s ease;
+}
+.group:hover .icon-body1 { transform: translateX(2px); }
+.group:hover .icon-body2 { transform: translateX(-2px); }
+
+/* === Privacy - clock hand rotates on hover === */
+.icon-clock {
+  transition: transform 0.6s ease;
+  transform-origin: center;
+}
+.group:hover .icon-clock {
+  transform: rotate(180deg);
+}
+
+/* === Person - head nods on hover === */
+.icon-head {
+  transition: transform 0.3s ease;
+  transform-origin: center bottom;
+}
+.group:hover .icon-head {
+  transform: translateY(-1px);
+}
+
+.icon-visor {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.group:hover .icon-visor {
+  opacity: 1;
+}
+
+/* === Globe - meridian rotates on hover === */
+.icon-meridian {
+  transition: transform 0.8s ease;
+  transform-origin: center;
+}
+.group:hover .icon-meridian {
+  transform: rotateY(180deg);
+}
+
+.icon-equator {
+  transition: stroke-dashoffset 0.4s ease;
+  stroke-dasharray: 32;
+  stroke-dashoffset: 0;
+}
 
 /* === Refresh - rotate on hover === */
 .group:hover .animated-icon:last-child {
